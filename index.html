@@ -1,11 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scrum</title>
+    <title>Scrum - PDS Corporativo</title>
     <link rel="stylesheet" href="principal.css">
+    
+    <style>
+        .diagrama-container {
+            text-align: center;
+            margin: 2rem 0;
+            padding: 1rem;
+            background-color: #f4f4f4;
+            border-radius: 8px;
+            border: 1px dashed #ccc;
+        }
+        
+        .diagrama-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+
+        .lista-atividades {
+            list-style: none;
+            padding: 0;
+            margin-top: 2rem;
+        }
+
+        .atividade-item {
+            background: #fff;
+            border-left: 5px solid #007bff; /* Cor destaque */
+            margin-bottom: 1.5rem;
+            padding: 1rem 1.5rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-radius: 0 8px 8px 0;
+        }
+
+        .atividade-item h3 {
+            margin-top: 0;
+            color: #333;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .badge-fase {
+            font-size: 0.8em;
+            background-color: #007bff;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-weight: normal;
+        }
+    </style>
 </head>
 
 <body>
@@ -113,8 +162,49 @@
             </section>
 
             <section id="atividades" class="conteudo-secao">
-                <h2>Atividades do Processo</h2>
-                <p>Planning, Daily, Review...</p>
+                <div class="header-secao">
+                    <h2>Atividades do Processo</h2>
+                </div>
+                
+                <p>O ciclo de vida do processo ágil adotado no PDS Corporativo segue um fluxo iterativo e incremental. 
+                   Abaixo, apresentamos o diagrama que modela este fluxo, seguido pela descrição detalhada de cada atividade.</p>
+
+                <div class="diagrama-container">
+                    <img src="assets/diagrama-atividades.png" alt="Diagrama de Atividades do Processo Scrum" class="diagrama-img">
+                    <p><em>Figura 1: Diagrama de Atividades - Ciclo de Vida da Sprint</em></p>
+                </div>
+
+                <div class="bloco-texto">
+                    <ul class="lista-atividades">
+                        <li class="atividade-item">
+                            <h3><span class="badge-fase">1</span> Planejamento da Sprint (Sprint Planning)</h3>
+                            <br>
+                            <p><strong>Entrada:</strong> Product Backlog priorizado.</p>
+                            <p>No início de cada ciclo, o time colabora para definir o trabalho a ser realizado. O Product Owner apresenta os itens de maior prioridade e os Desenvolvedores selecionam o que pode ser entregue, criando o <em>Sprint Backlog</em>. Define-se também a Meta da Sprint.</p>
+                        </li>
+
+                        <li class="atividade-item">
+                            <h3><span class="badge-fase">2</span> Daily Scrum (Reunião Diária)</h3>
+                            <br>
+                            <p><strong>Entrada:</strong> Sprint Backlog.</p>
+                            <p>Evento de 15 minutos (time-box) para os Developers. O objetivo é sincronizar atividades e criar um plano para as próximas 24 horas. O time responde a três perguntas: O que eu fiz? O que eu farei? Existe algum impedimento/obstáculo?.</p>
+                        </li>
+
+                        <li class="atividade-item">
+                            <h3><span class="badge-fase">3</span> Revisão da Sprint (Sprint Review)</h3>
+                            <br>
+                            <p><strong>Entrada:</strong> Incremento do produto.</p>
+                            <p>Reunião informal realizada ao final da Sprint para inspecionar o Incremento gerado e adaptar o Product Backlog se necessário. O time demonstra o trabalho "Pronto" aos stakeholders para obter feedback e promover colaboração.<p>
+                        </li>
+
+                        <li class="atividade-item">
+                            <h3><span class="badge-fase">4</span> Retrospectiva da Sprint</h3>
+                            <br>
+                            <p><strong>Entrada:</strong> Feedback do processo.</p>
+                            <p>O foco aqui não é o produto, mas o <strong>processo</strong>. O time analisa o que funcionou bem, o que deu errado e cria planos de ação para melhorar a eficiência e a qualidade na próxima Sprint.</p>
+                        </li>
+                    </ul>
+                </div>
             </section>
 
             <section id="praticas" class="conteudo-secao">
@@ -124,45 +214,45 @@
             
                 <p>Para apoiar a execução do processo ágil, o time adota práticas compatíveis com a realidade do projeto
                     acadêmico e com o contexto do PDS Corporativo.</p>
-                
+            
                 <div class="grid-praticas">
-                
+            
                     <div class="pratica-card">
                         <h3>Casos de Uso</h3>
                         <p>Os requisitos são modelados por meio de casos de uso, facilitando o entendimento das funcionalidades
                             do sistema e servindo como base para o planejamento das Sprints.</p>
                     </div>
-                
+            
                     <div class="pratica-card">
                         <h3>Sprints Iterativas</h3>
                         <p>O desenvolvimento ocorre em ciclos curtos, permitindo entregas frequentes e ajustes contínuos ao
                             longo do projeto.</p>
                     </div>
-                
+            
                     <div class="pratica-card">
                         <h3>Versionamento com Git</h3>
                         <p>O código-fonte é versionado utilizando Git, possibilitando controle das alterações, trabalho
                             colaborativo e histórico do desenvolvimento.</p>
                     </div>
-                
+            
                     <div class="pratica-card">
                         <h3>Testes Manuais</h3>
                         <p>A validação das funcionalidades é feita por meio de testes manuais e exploratórios, garantindo que os
                             requisitos definidos sejam atendidos.</p>
                     </div>
-                
+            
                     <div class="pratica-card">
                         <h3>Feedback Contínuo</h3>
                         <p>O professor orientador atua como principal fonte de feedback, avaliando as entregas e orientando o
                             time quanto às melhorias necessárias.</p>
                     </div>
-                
+            
                     <div class="pratica-card">
                         <h3>Melhoria Contínua</h3>
                         <p>O time realiza ajustes no processo ao longo do projeto, buscando maior organização, eficiência e
                             qualidade nas entregas.</p>
                     </div>
-                
+            
                 </div>
             </section>
         </main>
