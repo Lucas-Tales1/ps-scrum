@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scrum</title>
     <link rel="stylesheet" href="principal.css">
 </head>
+
 <body>
     <header>
         <h1 class="titulo">Scrum - PDS Corporativo</h1>
@@ -15,21 +17,124 @@
         <aside>
             <nav class="menu">
                 <ul>
-                    <li><a href="#">Introdução</a></li>
-                    <li><a href="#">Papéis</a></li>
-                    <li><a href="#">Atividades</a></li>
-                    <li><a href="#">Práticas Ágeis</a></li>
+                    <li><a href="#introducao">Introdução</a></li>
+                    <li><a href="#papeis">Papéis</a></li>
+                    <li><a href="#atividades">Atividades</a></li>
+                    <li><a href="#praticas">Práticas Ágeis</a></li>
                 </ul>
             </nav>
         </aside>
-    
+
         <main>
-            Conteúdo
+            <section id="introducao" class="conteudo-secao">
+                <div class="header-secao">
+                    <h2>Introdução ao Framework Scrum</h2>
+                    <span class="badge">PDS Corporativo</span>
+                </div>
+
+                <div class="bloco-texto">
+                    <p>O <strong>Scrum</strong> é um framework ágil e adaptativo projetado para auxiliar equipes a
+                        entregar valor de forma rápida e contínua em ambientes complexos. Diferente dos modelos
+                        tradicionais (Cascata), o Scrum se baseia no <strong>empirismo</strong>, onde o conhecimento vem
+                        da experiência e a tomada de decisão é baseada no que é observado.</p>
+
+                    <p>No contexto de Processo de Software, o Scrum organiza o desenvolvimento em ciclos chamados
+                        <strong>Sprints</strong>, garantindo que o produto seja testado e validado constantemente pelos
+                        stakeholders.
+                    </p>
+                </div>
+
+                <div class="pilares-container">
+                    <h3>Pilares do Scrum</h3>
+                    <div class="grid-pilares">
+                        <div class="pilar-card">
+                            <h4>Transparência</h4>
+                            <p>Aspectos significativos do processo devem estar visíveis aos responsáveis pelos
+                                resultados.</p>
+                        </div>
+                        <div class="pilar-card">
+                            <h4>Inspeção</h4>
+                            <p>Os artefatos e o progresso devem ser inspecionados frequentemente para detectar variações
+                                indesejadas.</p>
+                        </div>
+                        <div class="pilar-card">
+                            <h4>Adaptação</h4>
+                            <p>Se um processo se desvia dos limites aceitáveis, o ajuste deve ser feito o mais rápido
+                                possível.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="papeis" class="conteudo-secao">
+                <div class="header-secao">
+                    <h2>Papéis e Responsabilidades</h2>
+                    <span class="badge">Time Scrum</span>
+                </div>
+
+                <p class="desc-inicial">O Time Scrum é fundamentalmente multidisciplinar e auto-organizável. Ele não
+                    possui subtimes ou hierarquias internas, focando na entrega de um incremento útil a cada Sprint.</p>
+
+                <div class="grid-papeis">
+                    <div class="papeis-card">
+                        <div class="icon-role">🎯</div>
+                        <h4>Product Owner (PO)</h4>
+                        <p>O PO é o responsável por <strong>maximizar o valor do produto</strong> resultante do trabalho
+                            do Time Scrum. Ele é o único responsável pela gestão do Product Backlog.</p>
+                        <ul class="lista-funcoes">
+                            <li>Definir objetivos do produto</li>
+                            <li>Priorizar itens do backlog</li>
+                            <li>Garantir transparência do negócio</li>
+                        </ul>
+                    </div>
+
+                    <div class="papeis-card">
+                        <div class="icon-role">⚖️</div>
+                        <h4>Scrum Master</h4>
+                        <p>O facilitador que garante que o Scrum seja entendido e aplicado. Ele atua como um
+                            <strong>líder servidor</strong> para o Time e para a organização.</p>
+                        <ul class="lista-funcoes">
+                            <li>Remover impedimentos</li>
+                            <li>Facilitar eventos do Scrum</li>
+                            <li>Treinar o time em autogestão</li>
+                        </ul>
+                    </div>
+
+                    <div class="papeis-card">
+                        <div class="icon-role">💻</div>
+                        <h4>Developers</h4>
+                        <p>As pessoas do Time Scrum que estão comprometidas em criar qualquer aspecto de um
+                            <strong>incremento utilizável</strong> a cada Sprint.</p>
+                        <ul class="lista-funcoes">
+                            <li>Criar o plano da Sprint</li>
+                            <li>Garantir a qualidade técnica</li>
+                            <li>Adaptar o plano diariamente</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="atividades" class="conteudo-secao">
+                <h2>Atividades do Processo</h2>
+                <p>Planning, Daily, Review...</p>
+            </section>
+
+            <section id="praticas" class="conteudo-secao">
+                <h2>Práticas Ágeis</h2>
+                <p>TDD, CI/CD, etc...</p>
+            </section>
         </main>
     </div>
 
     <footer>
         <p>&copy; 2026 Desenvolvido por Lucas Tales, Manoel Pinto e Marcos Alexandre. Todos os direitos reservados.</p>
     </footer>
+
+    <script>
+        if (!window.location.hash) {
+            window.location.hash = 'introducao';
+        }
+    </script>
 </body>
+
 </html>
