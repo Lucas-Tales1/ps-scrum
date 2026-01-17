@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: lightskyblue;
+    padding: 1%;
+}
+
+.titulo {
+    font-family: montserrat, sans-serif;
+    color: rgb(0, 76, 123);
+}
