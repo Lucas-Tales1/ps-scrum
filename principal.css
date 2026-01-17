@@ -208,3 +208,41 @@ footer {
 /* --------- Estilização da Seção de Atividades --------- */
 
 /* --------- Estilização da Seção de Práticas Ágeis --------- */
+#praticas p {
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.grid-praticas {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.pratica-card {
+    flex: 1;
+    min-width: 260px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 5px solid darkgoldenrod;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.pratica-card:hover {
+    transform: translateY(-5px);
+}
+
+.pratica-card h3 {
+    color: rgb(0, 76, 123);
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.pratica-card p {
+    font-size: 0.9rem;
+    color: #555;
+}
