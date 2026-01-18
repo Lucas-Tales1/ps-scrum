@@ -1,34 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scrum</title>
+    <title>Scrum - PDS Corporativo</title>
+    
+    <!-- Importando Fontes Modernas (Inter e Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    
+    <!-- Importando Ícones (Phosphor Icons - Leve e moderno) -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- Estilos CSS -->
     <link rel="stylesheet" href="principal.css">
+
 </head>
 
 <body>
-    <header>
-        <h1 class="titulo">Scrum - PDS Corporativo</h1>
-    </header>
 
     <div id="wrapper">
+        <!-- Sidebar -->
         <aside>
+            <div class="brand">
+                <i class="ph ph-kanban"></i>
+                <span>PDS Corp.</span>
+            </div>
             <nav class="menu">
                 <ul>
-                    <li><a href="#introducao">Introdução</a></li>
-                    <li><a href="#papeis">Papéis</a></li>
-                    <li><a href="#atividades">Atividades</a></li>
-                    <li><a href="#praticas">Práticas Ágeis</a></li>
+                    <li><a href="#introducao" class="nav-link"><i class="ph ph-book-open"></i> Introdução</a></li>
+                    <li><a href="#papeis" class="nav-link"><i class="ph ph-users-three"></i> Papéis</a></li>
+                    <li><a href="#atividades" class="nav-link"><i class="ph ph-arrows-clockwise"></i> Atividades</a></li>
+                    <li><a href="#praticas" class="nav-link"><i class="ph ph-check-circle"></i> Práticas Ágeis</a></li>
                 </ul>
             </nav>
         </aside>
 
+        <!-- Conteúdo Principal -->
         <main>
+            <!-- Header Mobile/Desktop -->
+            <header style="margin-bottom: 3rem;">
+                <h1 style="color: var(--secondary-color); font-size: 2.5rem; font-family: 'Poppins', sans-serif;">Scrum - PDS Corporativo</h1>
+            </header>
+
+            <!-- Seção: Introdução -->
             <section id="introducao" class="conteudo-secao">
                 <div class="header-secao">
-                    <h2>Introdução ao Framework Scrum</h2>
+                    <h2><i class="ph ph-lightbulb" style="color: var(--primary-color); margin-right: 10px;"></i>Introdução ao Framework Scrum</h2>
                 </div>
 
                 <div class="bloco-texto">
@@ -36,49 +55,46 @@
                         entregar valor de forma rápida e contínua em ambientes complexos. Diferente dos modelos
                         tradicionais (Cascata), o Scrum se baseia no <strong>empirismo</strong>, onde o conhecimento vem
                         da experiência e a tomada de decisão é baseada no que é observado.</p>
-
                     <p>No contexto de Processo de Software, o Scrum organiza o desenvolvimento em ciclos chamados
                         <strong>Sprints</strong>, garantindo que o produto seja testado e validado constantemente pelos
-                        stakeholders.
-                    </p>
+                        stakeholders.</p>
                 </div>
 
-                <div class="pilares-container">
+                <div style="margin-top: 2rem;">
                     <h3>Pilares do Scrum</h3>
                     <div class="grid-pilares">
                         <div class="pilar-card">
+                            <i class="ph ph-eye" style="font-size: 2rem; color: var(--primary-color); margin-bottom: 10px;"></i>
                             <h4>Transparência</h4>
-                            <p>Aspectos significativos do processo devem estar visíveis aos responsáveis pelos
-                                resultados.</p>
+                            <p>Aspectos significativos do processo devem estar visíveis aos responsáveis pelos resultados.</p>
                         </div>
                         <div class="pilar-card">
+                            <i class="ph ph-magnifying-glass" style="font-size: 2rem; color: var(--primary-color); margin-bottom: 10px;"></i>
                             <h4>Inspeção</h4>
-                            <p>Os artefatos e o progresso devem ser inspecionados frequentemente para detectar variações
-                                indesejadas.</p>
+                            <p>Os artefatos e o progresso devem ser inspecionados frequentemente para detectar variações indesejadas.</p>
                         </div>
                         <div class="pilar-card">
+                            <i class="ph ph-arrows-left-right" style="font-size: 2rem; color: var(--primary-color); margin-bottom: 10px;"></i>
                             <h4>Adaptação</h4>
-                            <p>Se um processo se desvia dos limites aceitáveis, o ajuste deve ser feito o mais rápido
-                                possível.</p>
+                            <p>Se um processo se desvia dos limites aceitáveis, o ajuste deve ser feito o mais rápido possível.</p>
                         </div>
                     </div>
                 </div>
             </section>
 
+            <!-- Seção: Papéis -->
             <section id="papeis" class="conteudo-secao">
                 <div class="header-secao">
-                    <h2>Papéis e Responsabilidades</h2>
+                    <h2><i class="ph ph-users" style="color: var(--primary-color); margin-right: 10px;"></i>Papéis e Responsabilidades</h2>
                 </div>
 
-                <p class="desc-inicial">O Time Scrum é fundamentalmente multidisciplinar e auto-organizável. Ele não
-                    possui subtimes ou hierarquias internas, focando na entrega de um incremento útil a cada Sprint.</p>
+                <p class="desc-inicial" style="margin-bottom: 2rem; color: #475569;">O Time Scrum é fundamentalmente multidisciplinar e auto-organizável. Ele não possui subtimes ou hierarquias internas, focando na entrega de um incremento útil a cada Sprint.</p>
 
                 <div class="grid-papeis">
                     <div class="papeis-card">
-                        <div class="icon-role">🎯</div>
+                        <div class="icon-role"><i class="ph ph-target"></i></div>
                         <h4>Product Owner (PO)</h4>
-                        <p>O PO é o responsável por <strong>maximizar o valor do produto</strong> resultante do trabalho
-                            do Time Scrum. Ele é o único responsável pela gestão do Product Backlog.</p>
+                        <p>O PO é o responsável por <strong>maximizar o valor do produto</strong> resultante do trabalho do Time Scrum. Ele é o único responsável pela gestão do Product Backlog.</p>
                         <ul class="lista-funcoes">
                             <li>Definir objetivos do produto</li>
                             <li>Priorizar itens do backlog</li>
@@ -87,10 +103,9 @@
                     </div>
 
                     <div class="papeis-card">
-                        <div class="icon-role">⚖️</div>
+                        <div class="icon-role"><i class="ph ph-scales"></i></div>
                         <h4>Scrum Master</h4>
-                        <p>O facilitador que garante que o Scrum seja entendido e aplicado. Ele atua como um
-                            <strong>líder servidor</strong> para o Time e para a organização.</p>
+                        <p>O facilitador que garante que o Scrum seja entendido e aplicado. Ele atua como um líder servidor para o Time e para a organização.</p>
                         <ul class="lista-funcoes">
                             <li>Remover impedimentos</li>
                             <li>Facilitar eventos do Scrum</li>
@@ -99,10 +114,9 @@
                     </div>
 
                     <div class="papeis-card">
-                        <div class="icon-role">💻</div>
+                        <div class="icon-role"><i class="ph ph-code"></i></div>
                         <h4>Developers</h4>
-                        <p>As pessoas do Time Scrum que estão comprometidas em criar qualquer aspecto de um
-                            <strong>incremento utilizável</strong> a cada Sprint.</p>
+                        <p>As pessoas do Time Scrum que estão comprometidas em criar qualquer aspecto de um incremento utilizável a cada Sprint.</p>
                         <ul class="lista-funcoes">
                             <li>Criar o plano da Sprint</li>
                             <li>Garantir a qualidade técnica</li>
@@ -112,71 +126,134 @@
                 </div>
             </section>
 
+            <!-- Seção: Atividades -->
             <section id="atividades" class="conteudo-secao">
-                <h2>Atividades do Processo</h2>
-                <p>Planning, Daily, Review...</p>
+                <div class="header-secao">
+                    <h2><i class="ph ph-calendar-check" style="color: var(--primary-color); margin-right: 10px;"></i>Atividades do Processo</h2>
+                </div>
+                
+                <p>O ciclo de vida do processo ágil adotado no PDS Corporativo segue um fluxo iterativo e incremental. Abaixo, apresentamos o diagrama que modela este fluxo, seguido pela descrição detalhada de cada atividade.</p>
+
+                <div class="diagrama-container">
+                    <!-- Placeholder visual caso a imagem não carregue -->
+                    <div style="background: #f8fafc; padding: 2rem; border-radius: 8px; border: 2px dashed #cbd5e1; display: none;"> <!-- Oculto para priorizar a tag img, se houver -->
+                        <i class="ph ph-image" style="font-size: 3rem; color: #cbd5e1;"></i>
+                    </div>
+                    <!-- Descomente a linha abaixo e verifique o caminho da imagem -->
+                    <img src="assets/diagrama-atividades.png" alt="Diagrama de Atividades do Processo Scrum" class="diagrama-img" onerror="this.previousElementSibling.style.display='block'; this.style.display='none'">
+                    <p style="margin-top: 1rem; font-size: 0.9rem; color: #64748b;"><em>Figura 1: Diagrama de Atividades - Ciclo de Vida da Sprint</em></p>
+                </div>
+
+                <ul class="lista-atividades">
+                    <li class="atividade-item">
+                        <h3>Planejamento da Sprint (Sprint Planning) <span class="badge-fase">1</span></h3>
+                        <p><strong>Entrada:</strong> Product Backlog priorizado.</p>
+                        <p style="margin-top: 0.5rem; color: #475569;">No início de cada ciclo, o time colabora para definir o trabalho a ser realizado. O Product Owner apresenta os itens de maior prioridade e os Desenvolvedores selecionam o que pode ser entregue, criando o <em>Sprint Backlog</em>. Define-se também a Meta da Sprint.</p>
+                    </li>
+
+                    <li class="atividade-item">
+                        <h3>Daily Scrum (Reunião Diária) <span class="badge-fase">2</span></h3>
+                        <p><strong>Entrada:</strong> Sprint Backlog.</p>
+                        <p style="margin-top: 0.5rem; color: #475569;">Evento de 15 minutos (time-box) para os Developers. O objetivo é sincronizar atividades e criar um plano para as próximas 24 horas. O time responde a três perguntas: O que eu fiz? O que eu farei? Existe algum impedimento/obstáculo?.</p>
+                    </li>
+
+                    <li class="atividade-item">
+                        <h3>Revisão da Sprint (Sprint Review) <span class="badge-fase">3</span></h3>
+                        <p><strong>Entrada:</strong> Incremento do produto.</p>
+                        <p style="margin-top: 0.5rem; color: #475569;">Reunião informal realizada ao final da Sprint para inspecionar o Incremento gerado e adaptar o Product Backlog se necessário. O time demonstra o trabalho "Pronto" aos stakeholders para obter feedback e promover colaboração.</p>
+                    </li>
+
+                    <li class="atividade-item">
+                        <h3>Retrospectiva da Sprint <span class="badge-fase">4</span></h3>
+                        <p><strong>Entrada:</strong> Feedback do processo.</p>
+                        <p style="margin-top: 0.5rem; color: #475569;">O foco aqui não é o produto, mas o <strong>processo</strong>. O time analisa o que funcionou bem, o que deu errado e cria planos de ação para melhorar a eficiência e a qualidade na próxima Sprint.</p>
+                    </li>
+                </ul>
             </section>
 
+            <!-- Seção: Práticas -->
             <section id="praticas" class="conteudo-secao">
                 <div class="header-secao">
-                    <h2>Práticas Ágeis</h2>
+                    <h2><i class="ph ph-gear" style="color: var(--primary-color); margin-right: 10px;"></i>Práticas Ágeis</h2>
                 </div>
+                
+                <p style="margin-bottom: 2rem;">Para apoiar a execução do processo ágil, o time adota práticas compatíveis com a realidade do projeto acadêmico e com o contexto do PDS Corporativo.</p>
             
-                <p>Para apoiar a execução do processo ágil, o time adota práticas compatíveis com a realidade do projeto
-                    acadêmico e com o contexto do PDS Corporativo.</p>
-                
                 <div class="grid-praticas">
-                
                     <div class="pratica-card">
                         <h3>Casos de Uso</h3>
-                        <p>Os requisitos são modelados por meio de casos de uso, facilitando o entendimento das funcionalidades
-                            do sistema e servindo como base para o planejamento das Sprints.</p>
+                        <p>Os requisitos são modelados por meio de casos de uso, facilitando o entendimento das funcionalidades do sistema e servindo como base para o planejamento das Sprints.</p>
                     </div>
-                
+            
                     <div class="pratica-card">
                         <h3>Sprints Iterativas</h3>
-                        <p>O desenvolvimento ocorre em ciclos curtos, permitindo entregas frequentes e ajustes contínuos ao
-                            longo do projeto.</p>
+                        <p>O desenvolvimento ocorre em ciclos curtos, permitindo entregas frequentes e ajustes contínuos ao longo do projeto.</p>
                     </div>
-                
+            
                     <div class="pratica-card">
                         <h3>Versionamento com Git</h3>
-                        <p>O código-fonte é versionado utilizando Git, possibilitando controle das alterações, trabalho
-                            colaborativo e histórico do desenvolvimento.</p>
+                        <p>O código-fonte é versionado utilizando Git, possibilitando controle das alterações, trabalho colaborativo e histórico do desenvolvimento.</p>
                     </div>
-                
+            
                     <div class="pratica-card">
                         <h3>Testes Manuais</h3>
-                        <p>A validação das funcionalidades é feita por meio de testes manuais e exploratórios, garantindo que os
-                            requisitos definidos sejam atendidos.</p>
+                        <p>A validação das funcionalidades é feita por meio de testes manuais e exploratórios, garantindo que os requisitos definidos sejam atendidos.</p>
                     </div>
-                
+            
                     <div class="pratica-card">
                         <h3>Feedback Contínuo</h3>
-                        <p>O professor orientador atua como principal fonte de feedback, avaliando as entregas e orientando o
-                            time quanto às melhorias necessárias.</p>
+                        <p>O professor orientador atua como principal fonte de feedback, avaliando as entregas e orientando o time quanto às melhorias necessárias.</p>
                     </div>
-                
+            
                     <div class="pratica-card">
                         <h3>Melhoria Contínua</h3>
-                        <p>O time realiza ajustes no processo ao longo do projeto, buscando maior organização, eficiência e
-                            qualidade nas entregas.</p>
+                        <p>O time realiza ajustes no processo ao longo do projeto, buscando maior organização, eficiência e qualidade nas entregas.</p>
                     </div>
-                
                 </div>
             </section>
+
+            <footer>
+                <p>&copy; 2026 Desenvolvido por Lucas Tales, Manoel Pinto e Marcos Alexandre. Todos os direitos reservados.</p>
+            </footer>
         </main>
     </div>
 
-    <footer>
-        <p>&copy; 2026 Desenvolvido por Lucas Tales, Manoel Pinto e Marcos Alexandre. Todos os direitos reservados.</p>
-    </footer>
-
+    <!-- Script para Navegação Ativa -->
     <script>
-        if (!window.location.hash) {
-            window.location.hash = 'introducao';
-        }
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            // Função para atualizar o menu ativo ao rolar
+            const observerOptions = {
+                root: null,
+                rootMargin: '-20% 0px -50% 0px', // Ativa quando a seção estiver no meio da tela
+                threshold: 0
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // Remove active de todos
+                        navLinks.forEach(link => link.classList.remove('active'));
+                        
+                        // Adiciona active ao link correspondente
+                        const id = entry.target.getAttribute('id');
+                        const activeLink = document.querySelector(`.nav-link[href="#${id}"]`);
+                        if(activeLink) activeLink.classList.add('active');
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+
+            // Fallback para quando a página carrega sem hash
+            if (!window.location.hash) {
+                window.location.hash = 'introducao';
+            }
+        });
     </script>
 </body>
-
 </html>
