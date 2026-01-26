@@ -4,16 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scrum - PDS Corporativo</title>
+    <title>Scrum - Bem-te-ouvi</title>
     
-    <!-- Importando Fontes Modernas (Inter e Poppins) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
     
-    <!-- Importando Ícones (Phosphor Icons - Leve e moderno) -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    <!-- Estilos CSS -->
     <link rel="stylesheet" href="principal.css">
 
 </head>
@@ -21,204 +18,190 @@
 <body>
 
     <div id="wrapper">
-        <!-- Sidebar -->
         <aside>
             <div class="brand">
-                <i class="ph ph-kanban"></i>
-                <span>PDS Corp.</span>
+                <i class="ph ph-music-notes"></i>
+                <span>Bem-te-ouvi</span>
             </div>
             <nav class="menu">
                 <ul>
-                    <li><a href="#introducao" class="nav-link"><i class="ph ph-book-open"></i> Introdução</a></li>
+                    <li><a href="#introducao" class="nav-link"><i class="ph ph-book-open"></i> O Projeto</a></li>
                     <li><a href="#papeis" class="nav-link"><i class="ph ph-users-three"></i> Papéis</a></li>
-                    <li><a href="#atividades" class="nav-link"><i class="ph ph-arrows-clockwise"></i> Atividades</a></li>
-                    <li><a href="#praticas" class="nav-link"><i class="ph ph-check-circle"></i> Práticas Ágeis</a></li>
+                    <li><a href="#atividades" class="nav-link"><i class="ph ph-arrows-clockwise"></i> Sprints</a></li>
+                    <li><a href="#praticas" class="nav-link"><i class="ph ph-check-circle"></i> Práticas</a></li>
                 </ul>
             </nav>
         </aside>
 
-        <!-- Conteúdo Principal -->
         <main>
-            <!-- Header Mobile/Desktop -->
             <header style="margin-bottom: 3rem;">
-                <h1 style="color: var(--secondary-color); font-size: 2.5rem; font-family: 'Poppins', sans-serif;">Scrum - PDS Corporativo</h1>
+                <h1 style="color: var(--secondary-color); font-size: 2.5rem; font-family: 'Poppins', sans-serif;">Scrum no Bem-te-ouvi</h1>
+                <p style="color: #64748b; margin-top: 0.5rem;">Adaptação do framework ágil para o contexto do PDS Corporativo.</p>
             </header>
 
-            <!-- Seção: Introdução -->
             <section id="introducao" class="conteudo-secao">
                 <div class="header-secao">
-                    <h2><i class="ph ph-lightbulb" style="color: var(--primary-color); margin-right: 10px;"></i>Introdução ao Framework Scrum</h2>
+                    <h2><i class="ph ph-lightbulb" style="color: var(--primary-color); margin-right: 10px;"></i>Contexto do Projeto</h2>
                 </div>
 
                 <div class="bloco-texto">
-                    <p>O <strong>Scrum</strong> é um framework ágil e adaptativo projetado para auxiliar equipes a
-                        entregar valor de forma rápida e contínua em ambientes complexos. Diferente dos modelos
-                        tradicionais (Cascata), o Scrum se baseia no <strong>empirismo</strong>, onde o conhecimento vem
-                        da experiência e a tomada de decisão é baseada no que é observado.</p>
-                    <p>No contexto de Processo de Software, o Scrum organiza o desenvolvimento em ciclos chamados
-                        <strong>Sprints</strong>, garantindo que o produto seja testado e validado constantemente pelos
-                        stakeholders.</p>
+                    <p>No projeto <strong>Bem-te-ouvi</strong>, utilizamos o Scrum para gerenciar o desenvolvimento da nossa plataforma de streaming focada em músicos independentes. Dado o contexto acadêmico do próximo semestre, nosso foco muda da codificação pura para a <strong>gestão eficiente do ciclo de vida</strong> da aplicação.</p>
+                    <p>As Sprints serão ajustadas para ciclos quinzenais, permitindo que a equipe valide rapidamente funcionalidades críticas, como o <em>upload de álbuns</em> e a <em>reprodução de músicas</em>, garantindo que o valor entregue esteja alinhado com a visão de "dar visibilidade a talentos pouco conhecidos".</p>
                 </div>
 
                 <div style="margin-top: 2rem;">
-                    <h3>Pilares do Scrum</h3>
+                    <h3>Pilares Aplicados</h3>
                     <div class="grid-pilares">
                         <div class="pilar-card">
                             <i class="ph ph-eye" style="font-size: 2rem; color: var(--primary-color); margin-bottom: 10px;"></i>
                             <h4>Transparência</h4>
-                            <p>Aspectos significativos do processo devem estar visíveis aos responsáveis pelos resultados.</p>
+                            <p>O Backlog do Produto (baseado nos Requisitos Funcionais F01-F11) fica visível para todos no GitHub Projects.</p>
                         </div>
                         <div class="pilar-card">
                             <i class="ph ph-magnifying-glass" style="font-size: 2rem; color: var(--primary-color); margin-bottom: 10px;"></i>
                             <h4>Inspeção</h4>
-                            <p>Os artefatos e o progresso devem ser inspecionados frequentemente para detectar variações indesejadas.</p>
+                            <p>Revisão constante dos protótipos de alta fidelidade e do código Django para garantir a usabilidade (NF02).</p>
                         </div>
                         <div class="pilar-card">
                             <i class="ph ph-arrows-left-right" style="font-size: 2rem; color: var(--primary-color); margin-bottom: 10px;"></i>
                             <h4>Adaptação</h4>
-                            <p>Se um processo se desvia dos limites aceitáveis, o ajuste deve ser feito o mais rápido possível.</p>
+                            <p>Ajustes rápidos no escopo caso uma ferramenta (ex: player de áudio) apresente dificuldades técnicas.</p>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- Seção: Papéis -->
             <section id="papeis" class="conteudo-secao">
                 <div class="header-secao">
                     <h2><i class="ph ph-users" style="color: var(--primary-color); margin-right: 10px;"></i>Papéis e Responsabilidades</h2>
                 </div>
 
-                <p class="desc-inicial" style="margin-bottom: 2rem; color: #475569;">O Time Scrum é fundamentalmente multidisciplinar e auto-organizável. Ele não possui subtimes ou hierarquias internas, focando na entrega de um incremento útil a cada Sprint.</p>
+                <p class="desc-inicial" style="margin-bottom: 2rem; color: #475569;">A equipe é formada por André Luiz, Marcos Alexandre, Lucas Tales e Manoel Pinto. Abaixo, definimos como as responsabilidades do Scrum são distribuídas no nosso contexto:</p>
 
                 <div class="grid-papeis">
                     <div class="papeis-card">
                         <div class="icon-role"><i class="ph ph-target"></i></div>
                         <h4>Product Owner (PO)</h4>
-                        <p>O PO é o responsável por <strong>maximizar o valor do produto</strong> resultante do trabalho do Time Scrum. Ele é o único responsável pela gestão do Product Backlog.</p>
+                        <p>Focado na visão de negócio descrita no <em>Documento de Visão</em>. Decide o que é prioritário para o músico independente.</p>
                         <ul class="lista-funcoes">
-                            <li>Definir objetivos do produto</li>
-                            <li>Priorizar itens do backlog</li>
-                            <li>Garantir transparência do negócio</li>
+                            <li>Priorizar a "F02 - Criar álbum" sobre a "F05 - Doar"</li>
+                            <li>Validar se as telas seguem os protótipos</li>
+                            <li>Gerenciar o Product Backlog no GitHub</li>
                         </ul>
                     </div>
 
                     <div class="papeis-card">
                         <div class="icon-role"><i class="ph ph-scales"></i></div>
                         <h4>Scrum Master</h4>
-                        <p>O facilitador que garante que o Scrum seja entendido e aplicado. Ele atua como um líder servidor para o Time e para a organização.</p>
+                        <p>Responsável por garantir que o processo flua sem impedimentos técnicos ou de infraestrutura.</p>
                         <ul class="lista-funcoes">
-                            <li>Remover impedimentos</li>
-                            <li>Facilitar eventos do Scrum</li>
-                            <li>Treinar o time em autogestão</li>
+                            <li>Resolver conflitos de merge no Git</li>
+                            <li>Garantir o ambiente Docker configurado</li>
+                            <li>Facilitar as Dailies no Discord/Meet</li>
                         </ul>
                     </div>
 
                     <div class="papeis-card">
                         <div class="icon-role"><i class="ph ph-code"></i></div>
                         <h4>Developers</h4>
-                        <p>As pessoas do Time Scrum que estão comprometidas em criar qualquer aspecto de um incremento utilizável a cada Sprint.</p>
+                        <p>Toda a equipe atua no desenvolvimento full-stack (Django + Templates), implementando os Casos de Uso.</p>
                         <ul class="lista-funcoes">
-                            <li>Criar o plano da Sprint</li>
-                            <li>Garantir a qualidade técnica</li>
-                            <li>Adaptar o plano diariamente</li>
+                            <li>Implementar Views e Templates (ex: CDU-010)</li>
+                            <li>Criar testes para garantir desempenho (NF03)</li>
+                            <li>Realizar Code Review dos Pull Requests</li>
                         </ul>
                     </div>
                 </div>
             </section>
 
-            <!-- Seção: Atividades -->
             <section id="atividades" class="conteudo-secao">
                 <div class="header-secao">
-                    <h2><i class="ph ph-calendar-check" style="color: var(--primary-color); margin-right: 10px;"></i>Atividades do Processo</h2>
+                    <h2><i class="ph ph-calendar-check" style="color: var(--primary-color); margin-right: 10px;"></i>Ciclo da Sprint</h2>
                 </div>
                 
-                <p>O ciclo de vida do processo ágil adotado no PDS Corporativo segue um fluxo iterativo e incremental. Abaixo, apresentamos o diagrama que modela este fluxo, seguido pela descrição detalhada de cada atividade.</p>
+                <p>O fluxo de trabalho no Bem-te-ouvi é guiado pelos artefatos de documentação já produzidos. Veja como cada cerimônia acontece na prática:</p>
 
                 <div class="diagrama-container">
-                    <!-- Placeholder visual caso a imagem não carregue -->
-                    <div style="background: #f8fafc; padding: 2rem; border-radius: 8px; border: 2px dashed #cbd5e1; display: none;"> <!-- Oculto para priorizar a tag img, se houver -->
+                    <div style="background: #f8fafc; padding: 2rem; border-radius: 8px; border: 2px dashed #cbd5e1; display: none;">
                         <i class="ph ph-image" style="font-size: 3rem; color: #cbd5e1;"></i>
                     </div>
-                    <!-- Descomente a linha abaixo e verifique o caminho da imagem -->
                     <img src="assets/diagrama-atividades.png" alt="Diagrama de Atividades do Processo Scrum" class="diagrama-img" onerror="this.previousElementSibling.style.display='block'; this.style.display='none'">
-                    <p style="margin-top: 1rem; font-size: 0.9rem; color: #64748b;"><em>Figura 1: Diagrama de Atividades - Ciclo de Vida da Sprint</em></p>
+                    <p style="margin-top: 1rem; font-size: 0.9rem; color: #64748b;"><em>Figura 1: Fluxo Iterativo do Bem-te-ouvi</em></p>
                 </div>
 
                 <ul class="lista-atividades">
                     <li class="atividade-item">
-                        <h3>Planejamento da Sprint (Sprint Planning) <span class="badge-fase">1</span></h3>
-                        <p><strong>Entrada:</strong> Product Backlog priorizado.</p>
-                        <p style="margin-top: 0.5rem; color: #475569;">No início de cada ciclo, o time colabora para definir o trabalho a ser realizado. O Product Owner apresenta os itens de maior prioridade e os Desenvolvedores selecionam o que pode ser entregue, criando o <em>Sprint Backlog</em>. Define-se também a Meta da Sprint.</p>
+                        <h3>Sprint Planning <span class="badge-fase">1</span></h3>
+                        <p><strong>Entrada:</strong> Requisitos Funcionais (Tabela F01-F11).</p>
+                        <p style="margin-top: 0.5rem; color: #475569;">O time seleciona itens de Alta Prioridade. <br><em>Exemplo:</em> Para a Sprint 1, selecionamos o <strong>CDU-001 (Ouvir música)</strong> e o <strong>CDU-011 (Registrar)</strong>. A meta é permitir que um Visitante crie conta e ouça uma faixa demo.</p>
                     </li>
 
                     <li class="atividade-item">
-                        <h3>Daily Scrum (Reunião Diária) <span class="badge-fase">2</span></h3>
-                        <p><strong>Entrada:</strong> Sprint Backlog.</p>
-                        <p style="margin-top: 0.5rem; color: #475569;">Evento de 15 minutos (time-box) para os Developers. O objetivo é sincronizar atividades e criar um plano para as próximas 24 horas. O time responde a três perguntas: O que eu fiz? O que eu farei? Existe algum impedimento/obstáculo?.</p>
+                        <h3>Daily Scrum <span class="badge-fase">2</span></h3>
+                        <p><strong>Foco:</strong> Sincronização técnica.</p>
+                        <p style="margin-top: 0.5rem; color: #475569;">Check-in rápido de 15 min. <br><em>Exemplo:</em> "Ontem finalizei o HTML do Login (CDU-010). Hoje vou integrar com a autenticação do Django. Estou travado no carregamento dos arquivos estáticos (CSS)."</p>
                     </li>
 
                     <li class="atividade-item">
-                        <h3>Revisão da Sprint (Sprint Review) <span class="badge-fase">3</span></h3>
-                        <p><strong>Entrada:</strong> Incremento do produto.</p>
-                        <p style="margin-top: 0.5rem; color: #475569;">Reunião informal realizada ao final da Sprint para inspecionar o Incremento gerado e adaptar o Product Backlog se necessário. O time demonstra o trabalho "Pronto" aos stakeholders para obter feedback e promover colaboração.</p>
+                        <h3>Sprint Review <span class="badge-fase">3</span></h3>
+                        <p><strong>Entrada:</strong> Funcionalidade "Pronta".</p>
+                        <p style="margin-top: 0.5rem; color: #475569;">Demonstração do software rodando. <br><em>Exemplo:</em> Mostrar ao professor o fluxo de um Músico cadastrando um evento (CDU-007) e validar se a interface está intuitiva conforme o Requisito Não-Funcional <strong>NF02</strong>.</p>
                     </li>
 
                     <li class="atividade-item">
-                        <h3>Retrospectiva da Sprint <span class="badge-fase">4</span></h3>
-                        <p><strong>Entrada:</strong> Feedback do processo.</p>
-                        <p style="margin-top: 0.5rem; color: #475569;">O foco aqui não é o produto, mas o <strong>processo</strong>. O time analisa o que funcionou bem, o que deu errado e cria planos de ação para melhorar a eficiência e a qualidade na próxima Sprint.</p>
+                        <h3>Sprint Retrospective <span class="badge-fase">4</span></h3>
+                        <p><strong>Foco:</strong> Melhoria do Processo.</p>
+                        <p style="margin-top: 0.5rem; color: #475569;">O time discute o que pode melhorar. <br><em>Exemplo:</em> "Precisamos melhorar as descrições dos Pull Requests" ou "A comunicação sobre mudanças no banco de dados precisa ser mais clara".</p>
                     </li>
                 </ul>
             </section>
 
-            <!-- Seção: Práticas -->
             <section id="praticas" class="conteudo-secao">
                 <div class="header-secao">
-                    <h2><i class="ph ph-gear" style="color: var(--primary-color); margin-right: 10px;"></i>Práticas Ágeis</h2>
+                    <h2><i class="ph ph-gear" style="color: var(--primary-color); margin-right: 10px;"></i>Práticas e Ferramentas</h2>
                 </div>
                 
-                <p style="margin-bottom: 2rem;">Para apoiar a execução do processo ágil, o time adota práticas compatíveis com a realidade do projeto acadêmico e com o contexto do PDS Corporativo.</p>
+                <p style="margin-bottom: 2rem;">Adotamos práticas específicas para garantir a qualidade do código e a fidelidade à documentação do Bem-te-ouvi:</p>
             
                 <div class="grid-praticas">
                     <div class="pratica-card">
-                        <h3>Casos de Uso</h3>
-                        <p>Os requisitos são modelados por meio de casos de uso, facilitando o entendimento das funcionalidades do sistema e servindo como base para o planejamento das Sprints.</p>
+                        <h3>Modelagem por Casos de Uso</h3>
+                        <p>Em vez de User Stories genéricas, utilizamos <strong>CDUs detalhados</strong> (ex: diagrama em <code>doc/cdu/cdu.md</code>) para guiar o desenvolvimento e tratar fluxos de exceção.</p>
                     </div>
             
                     <div class="pratica-card">
-                        <h3>Sprints Iterativas</h3>
-                        <p>O desenvolvimento ocorre em ciclos curtos, permitindo entregas frequentes e ajustes contínuos ao longo do projeto.</p>
+                        <h3>Priorização MoSCoW</h3>
+                        <p>Baseada na tabela de Requisitos. Itens de prioridade <strong>Alta</strong> (F01, F02, F10) são desenvolvidos primeiro; itens de prioridade <strong>Média</strong> (F05, F07) ficam para o final.</p>
                     </div>
             
                     <div class="pratica-card">
-                        <h3>Versionamento com Git</h3>
-                        <p>O código-fonte é versionado utilizando Git, possibilitando controle das alterações, trabalho colaborativo e histórico do desenvolvimento.</p>
+                        <h3>Feature Branch Workflow</h3>
+                        <p>Cada Caso de Uso possui sua própria branch no Git. O código só é integrado à <code>main</code> após revisão e testes, mantendo o histórico organizado.</p>
                     </div>
             
                     <div class="pratica-card">
-                        <h3>Testes Manuais</h3>
-                        <p>A validação das funcionalidades é feita por meio de testes manuais e exploratórios, garantindo que os requisitos definidos sejam atendidos.</p>
+                        <h3>Definição de Pronto (DoD)</h3>
+                        <p>Um item só é concluído se: o código foi comitado, passou nos testes de desempenho (carregamento < 5s, <strong>NF03</strong>) e a interface segue o guia de estilos.</p>
                     </div>
             
                     <div class="pratica-card">
-                        <h3>Feedback Contínuo</h3>
-                        <p>O professor orientador atua como principal fonte de feedback, avaliando as entregas e orientando o time quanto às melhorias necessárias.</p>
+                        <h3>Validação com Protótipos</h3>
+                        <p>Antes de codificar, as telas são comparadas com os protótipos de alta fidelidade para garantir a experiência do usuário (UX).</p>
                     </div>
             
                     <div class="pratica-card">
-                        <h3>Melhoria Contínua</h3>
-                        <p>O time realiza ajustes no processo ao longo do projeto, buscando maior organização, eficiência e qualidade nas entregas.</p>
+                        <h3>Feedback Acadêmico</h3>
+                        <p>O ciclo de feedback inclui a avaliação do professor orientador, garantindo que o projeto atenda aos requisitos da disciplina de Gerência.</p>
                     </div>
                 </div>
             </section>
 
             <footer>
-                <p>&copy; 2026 Desenvolvido por Lucas Tales, Manoel Pinto e Marcos Alexandre. Todos os direitos reservados.</p>
+                <p>&copy; 2026 Desenvolvido por André Luiz, Gustavo Henrique, Lucas Tales e Manoel Pinto. Todos os direitos reservados.</p>
             </footer>
         </main>
     </div>
 
-    <!-- Script para Navegação Ativa -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const sections = document.querySelectorAll('section');
