@@ -53,17 +53,20 @@
                     <h3>Pilares Aplicados</h3>
                     <div class="grid-pilares">
                         <div class="pilar-card">
-                            <i class="ph ph-eye" style="font-size: 2rem; color: var(--primary-color); margin-bottom: 10px;"></i>
+                            <i class="ph ph-eye"
+                                style="font-size: 2rem; color: var(--primary-color); margin-bottom: 10px;"></i>
                             <h4>Transparência</h4>
                             <p>O Backlog do Produto (baseado nos Requisitos Funcionais F01-F11) fica visível para todos no GitHub Projects.</p>
                         </div>
                         <div class="pilar-card">
-                            <i class="ph ph-magnifying-glass" style="font-size: 2rem; color: var(--primary-color); margin-bottom: 10px;"></i>
+                            <i class="ph ph-magnifying-glass"
+                                style="font-size: 2rem; color: var(--primary-color); margin-bottom: 10px;"></i>
                             <h4>Inspeção</h4>
                             <p>Revisão constante dos protótipos de alta fidelidade e do código Django para garantir a usabilidade (NF02).</p>
                         </div>
                         <div class="pilar-card">
-                            <i class="ph ph-arrows-left-right" style="font-size: 2rem; color: var(--primary-color); margin-bottom: 10px;"></i>
+                            <i class="ph ph-arrows-left-right"
+                                style="font-size: 2rem; color: var(--primary-color); margin-bottom: 10px;"></i>
                             <h4>Adaptação</h4>
                             <p>Ajustes rápidos no escopo caso uma ferramenta (ex: player de áudio) apresente dificuldades técnicas.</p>
                         </div>
@@ -73,7 +76,8 @@
 
             <section id="papeis" class="conteudo-secao">
                 <div class="header-secao">
-                    <h2><i class="ph ph-users" style="color: var(--primary-color); margin-right: 10px;"></i>Papéis e Responsabilidades</h2>
+                    <h2><i class="ph ph-users" style="color: var(--primary-color); margin-right: 10px;"></i>Papéis e
+                        Responsabilidades</h2>
                 </div>
 
                 <p class="desc-inicial" style="margin-bottom: 2rem; color: #475569;">A equipe é formada por André Luiz, Marcos Alexandre, Lucas Tales e Manoel Pinto. Abaixo, definimos como as responsabilidades do Scrum são distribuídas no nosso contexto:</p>
@@ -168,27 +172,27 @@
                         <h3>Modelagem por Casos de Uso</h3>
                         <p>Em vez de User Stories genéricas, utilizamos <strong>CDUs detalhados</strong> (ex: diagrama em <code>doc/cdu/cdu.md</code>) para guiar o desenvolvimento e tratar fluxos de exceção.</p>
                     </div>
-            
+
                     <div class="pratica-card">
                         <h3>Priorização MoSCoW</h3>
                         <p>Baseada na tabela de Requisitos. Itens de prioridade <strong>Alta</strong> (F01, F02, F10) são desenvolvidos primeiro; itens de prioridade <strong>Média</strong> (F05, F07) ficam para o final.</p>
                     </div>
-            
+
                     <div class="pratica-card">
                         <h3>Feature Branch Workflow</h3>
                         <p>Cada Caso de Uso possui sua própria branch no Git. O código só é integrado à <code>main</code> após revisão e testes, mantendo o histórico organizado.</p>
                     </div>
-            
+
                     <div class="pratica-card">
                         <h3>Definição de Pronto (DoD)</h3>
                         <p>Um item só é concluído se: o código foi comitado, passou nos testes de desempenho (carregamento < 5s, <strong>NF03</strong>) e a interface segue o guia de estilos.</p>
                     </div>
-            
+
                     <div class="pratica-card">
                         <h3>Validação com Protótipos</h3>
                         <p>Antes de codificar, as telas são comparadas com os protótipos de alta fidelidade para garantir a experiência do usuário (UX).</p>
                     </div>
-            
+
                     <div class="pratica-card">
                         <h3>Feedback Acadêmico</h3>
                         <p>O ciclo de feedback inclui a avaliação do professor orientador, garantindo que o projeto atenda aos requisitos da disciplina de Gerência.</p>
@@ -219,11 +223,11 @@
                     if (entry.isIntersecting) {
                         // Remove active de todos
                         navLinks.forEach(link => link.classList.remove('active'));
-                        
+
                         // Adiciona active ao link correspondente
                         const id = entry.target.getAttribute('id');
                         const activeLink = document.querySelector(`.nav-link[href="#${id}"]`);
-                        if(activeLink) activeLink.classList.add('active');
+                        if (activeLink) activeLink.classList.add('active');
                     }
                 });
             }, observerOptions);
@@ -239,4 +243,5 @@
         });
     </script>
 </body>
+
 </html>

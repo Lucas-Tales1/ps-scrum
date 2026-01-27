@@ -1,1 +1,0 @@
-# Todas as imagens que forem usar coloquem nessa pasta
